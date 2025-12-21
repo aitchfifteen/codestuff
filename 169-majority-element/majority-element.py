@@ -1,0 +1,15 @@
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return nums[0]
+        nums.sort()
+        i = 0
+        count = 1
+        while i < len(nums):
+            if i > 0 and nums[i] == nums[i - 1]:
+                count += 1
+                if count > len(nums) // 2:
+                    return nums[i]
+            i += 1    
+
+        

@@ -10,6 +10,8 @@ class Solution:
                 count += 1
                 if count > len(nums) // 2:
                     return nums[i]
+            elif nums[i] != nums[i - 1]:
+                count = 1       
             i += 1    
 
         

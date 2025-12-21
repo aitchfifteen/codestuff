@@ -6,7 +6,7 @@ class Solution:
             if j < 2:
                 nums[i] = out[j]
                 i += 1
-            elif out[j] != out[j-2] and j > 1:
+            elif out[j] != out[j-2]:
                 nums[i] = out[j]
                 i += 1
         return i

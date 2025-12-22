@@ -3,9 +3,7 @@ class Solution:
         min = float('inf')
         best = 0
         for i in prices:
-            if min == None:
-                min = i
-            elif i < min:
+            if i < min:
                 min = i
             else:
                 best = max(best, i - min)

@@ -5,10 +5,10 @@ class Solution:
         if n == 1 or k == 0:
             return
 
-        out = nums[:]          # copy
-        doubled = out + out    # "double" it
+        out = nums[:]          
+        doubled = out + out    
 
-        start = n - k          # where the rotated version begins in doubled
+        start = n - k          
         nums[:] = doubled[start : start + n]
 
 

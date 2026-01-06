@@ -7,8 +7,7 @@ class Solution:
                 break
             if t[i] != s[next]:
                 continue
-            elif t[i] == s[next]:
-                next += 1
+            next += 1
         
         if next == len(s):
             return True

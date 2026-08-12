@@ -38,18 +38,10 @@ class Solution:
                 current = head1
                 head1 = head1.next
 
-        if head1 == None:
-            while head2:
-                current.next = head2
-                current = head2
-                head2 = head2.next
-
-        elif head2 == None:
-            while head1:
-                current.next = head1
-                current = head1
-                head1 = head1.next
-            
+        if head1:
+            current.next = head1
+        else:
+            current.next = head2
         
         return head3
 

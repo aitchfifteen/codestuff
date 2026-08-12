@@ -30,13 +30,12 @@ class Solution:
         while head1 and head2:
             if head1.val > head2.val:
                 current.next = head2
-                current = head2
                 head2 = head2.next
     
             else:     
                 current.next = head1
-                current = head1
                 head1 = head1.next
+            current = current.next
 
         if head1:
             current.next = head1
